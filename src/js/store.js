@@ -1,15 +1,13 @@
 /*jshint esversion: 6 */
-import { createStore, combineReducers } from 'redux';
-import acomponents from './reducers/acomponents';
+import { createStore } from 'redux';
+
+import reducer from './reducers';
 
 window.STATE_FROM_SERVER = {
   acomponents: []
 };
 
-var reducer = combineReducers({
-  acomponents
-});
-
 let store = createStore(reducer, window.STATE_FROM_SERVER);
+window.store = store;
 
 export default store;

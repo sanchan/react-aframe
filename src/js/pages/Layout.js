@@ -14,8 +14,10 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Nav />
-        <PanelContainer></PanelContainer>
-        {this.props.children}
+        <div id="app-body">
+          <PanelContainer></PanelContainer>
+          {this.props.children}
+        </div>
       </div>
 
     );

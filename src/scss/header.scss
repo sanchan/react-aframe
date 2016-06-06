@@ -1,0 +1,28 @@
+#header {
+  background: $header-primary-color;
+  box-sizing: border-box;
+  border-bottom: 1px solid #3b486b;
+  color: #fff;
+  height: $header-height;
+  line-height: $header-height;
+  text-align: center;
+  padding: 5px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .btn {
+    font-size: 12px;
+    float: left;
+    line-height: 2em;
+    cursor: pointer;
+
+    .fa {
+      display: block;
+      font-size: 24px;
+    }
+  }
+}

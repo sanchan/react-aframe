@@ -1,9 +1,8 @@
 /*jshint esversion: 6 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
 import { Provider } from 'react-redux';
-
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import store from './store';
 import Layout from "./pages/Layout";

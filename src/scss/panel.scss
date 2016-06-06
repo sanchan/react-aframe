@@ -1,0 +1,85 @@
+#panel-acomponents {
+  background: $panel-primary-color;
+  color: #586b9e;
+  font-family: 'Source Code Pro';
+  position:absolute;
+  right:0;
+  bottom: 0;
+  min-width: 250px;
+  padding: 10px;
+  top: 0;
+  z-index: 1;
+
+  > ul {
+    padding: 0;
+    margin: 0;
+
+    > li {
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+
+      &.content {
+        cursor: default;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #3b486b;
+      }
+
+      > .title {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
+
+      > .fa {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      > form {
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        .row {
+          margin-bottom: 10px;
+
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+        }
+
+        label {
+          float: left;
+          width: 25%;
+        }
+
+        .form-value {
+          float: left;
+          width: 75%;
+
+          input {
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+
+        .submit {
+          cursor: pointer;
+          float: right;
+          border: none;
+          background: #586b9e;
+          color: #fff;
+          padding: 8px 10px;
+
+        }
+      }
+    }
+  }
+}

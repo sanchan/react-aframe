@@ -1,0 +1,12 @@
+* {
+  font-family: 'Source Sans Pro';
+  font-weight: 100;
+}
+
+#app-body {
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

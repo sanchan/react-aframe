@@ -1,0 +1,90 @@
+* {
+  font-family: 'Source Sans Pro';
+  font-weight: 100; }
+
+#app-body {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+#header {
+  background: #232b40;
+  box-sizing: border-box;
+  border-bottom: 1px solid #3b486b;
+  color: #fff;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  padding: 5px; }
+  #header:after {
+    content: "";
+    display: block;
+    clear: both; }
+  #header .btn {
+    font-size: 12px;
+    float: left;
+    line-height: 2em;
+    cursor: pointer; }
+    #header .btn .fa {
+      display: block;
+      font-size: 24px; }
+
+#panel-acomponents {
+  background: #232b40;
+  color: #586b9e;
+  font-family: 'Source Code Pro';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 250px;
+  padding: 10px;
+  top: 0;
+  z-index: 1; }
+  #panel-acomponents > ul {
+    padding: 0;
+    margin: 0; }
+    #panel-acomponents > ul > li {
+      cursor: pointer;
+      list-style: none;
+      position: relative; }
+      #panel-acomponents > ul > li.content {
+        cursor: default;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #3b486b; }
+      #panel-acomponents > ul > li > .title {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 20px; }
+      #panel-acomponents > ul > li > .fa {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      #panel-acomponents > ul > li > form:after {
+        content: "";
+        display: block;
+        clear: both; }
+      #panel-acomponents > ul > li > form .row {
+        margin-bottom: 10px; }
+        #panel-acomponents > ul > li > form .row:after {
+          content: "";
+          display: block;
+          clear: both; }
+      #panel-acomponents > ul > li > form label {
+        float: left;
+        width: 25%; }
+      #panel-acomponents > ul > li > form .form-value {
+        float: left;
+        width: 75%; }
+        #panel-acomponents > ul > li > form .form-value input {
+          width: 100%;
+          box-sizing: border-box; }
+      #panel-acomponents > ul > li > form .submit {
+        cursor: pointer;
+        float: right;
+        border: none;
+        background: #586b9e;
+        color: #fff;
+        padding: 8px 10px; }
