@@ -12,8 +12,8 @@ export default class PanelContainer extends React.Component {
     this.props.dispatch(actions.addSphere({color: "#FF0000"}));
   }
 
-  addBox() {
-    this.props.dispatch(actions.addBox({color: "#00FF00"}));
+  addBox(props) {
+    this.props.dispatch(actions.addBox(props));
   }
 
   render() {
