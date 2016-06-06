@@ -33,9 +33,8 @@ export default class SceneContainer extends React.Component {
 
     return (
       <div>
-      <a-scene height="500px;" gridhelper>
+      <a-scene gridhelper>
         {acomponents}
-        <a-entity colorCenterLine="blue" size="30"></a-entity>
       </a-scene>
       </div>
     );
