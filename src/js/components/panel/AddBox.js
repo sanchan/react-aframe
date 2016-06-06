@@ -11,7 +11,7 @@ export default class AddBoxContainer extends React.Component {
           </div>
         </div>
         <div class="row">
-          <button class="submit" onClick={this.props.onSubmit}>Add Cube</button>
+          <button class="submit" onClick={this.props.onSubmit}>Add Box</button>
         </div>
       </div>
     )

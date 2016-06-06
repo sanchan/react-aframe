@@ -20,7 +20,6 @@ export default class Nav extends React.Component {
             <i class="fa fa-file-o" aria-hidden="true"></i>
             New Project
           </span>
-          a-frame Editor
         </nav>
       </div>
     );
