@@ -1,20 +1,22 @@
 import React from "react";
 
+import ComponentAttrs from './ComponentAttrs';
 import MeshAttrs from './MeshAttrs';
 
 export default class AddBox extends React.Component {
   static defaults = {
-    depth: 1,
-    height: 1,
-    width: 1
+    depth: "1.0",
+    height: "1.0",
+    width: "1.0"
   }
 
   render() {
     return (
       <div>
+        <ComponentAttrs {...this.props.componentsActions}></ComponentAttrs>
         <MeshAttrs {...this.props.meshActions}></MeshAttrs>
         <div class="row">
-          <h3>Box atrributes</h3>
+          <h3>Box attributes</h3>
         </div>
         <div class="row">
           <label>Depth</label>

@@ -4,9 +4,9 @@ export default class MeshAttrs extends React.Component {
   // See https://aframe.io/docs/0.2.0/primitives/mesh-attributes.html
   static defaults = {
     color: "gray",
-    metalness: 0,
-    opacity: 1,
-    roughness: 0.5,
+    metalness: "0.0",
+    opacity: "1.0",
+    roughness: "0.5",
     shader: "standard",
     src: "None",
     translate: "0 0 0",
@@ -17,7 +17,7 @@ export default class MeshAttrs extends React.Component {
     return (
       <div>
         <div class="row">
-          <h3>Mesh atrributes</h3>
+          <h3>Mesh attributes</h3>
         </div>
         <div class="row">
           <label>Color</label>

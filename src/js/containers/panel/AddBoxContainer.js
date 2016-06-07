@@ -22,9 +22,21 @@ export default class AddBoxContainer extends React.Component {
   //   }).bind(this)
   // }
 
+  // Components Actions
+  onChangePosition(e) {
+    this.setState({position: e.target.value});
+  }
+
+  onChangeRotation(e) {
+    this.setState({rotation: e.target.value});
+  }
+
+  onChangeScale(e) {
+    this.setState({scale: e.target.value});
+  }
+
   // Mesh Actions
   onChangeColor(e){
-    console.log("color");
     this.setState({color: e.target.value});
   }
 
@@ -75,6 +87,12 @@ export default class AddBoxContainer extends React.Component {
   }
 
   render() {
+    const componentsActions = {
+      onChangePosition: ::this.onChangePosition,
+      onChangeRotation: ::this.onChangeRotation,
+      onChangeScale: ::this.onChangeScale
+    };
+
     const meshActions = {
       onChangeColor: ::this.onChangeColor,
       onChangeMetalness: ::this.onChangeMetalness,
@@ -93,7 +111,7 @@ export default class AddBoxContainer extends React.Component {
     };
 
     return (
-      <AddBox meshActions={meshActions} {...boxActions} onSubmit={::this.onSubmit}></AddBox>
+      <AddBox componentsActions={componentsActions} meshActions={meshActions} {...boxActions} onSubmit={::this.onSubmit}></AddBox>
     )
   }
 }
