@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import * as PanelActions from '../actions/acomponents';
 import AddBoxContainer from '../containers/panel/AddBoxContainer';
 
-class Panel extends React.Component {
+@connect()
+export default class Panel extends React.Component {
   render() {
     const actions = {addBox: this.props.addBox};
 
@@ -24,5 +25,3 @@ class Panel extends React.Component {
   }
 
 }
-
-export default connect()(Panel);

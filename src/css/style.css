@@ -74,10 +74,10 @@
           clear: both; }
       #panel-acomponents > ul > li > form label {
         float: left;
-        width: 25%; }
+        width: 32%; }
       #panel-acomponents > ul > li > form .form-value {
         float: left;
-        width: 75%; }
+        width: 68%; }
         #panel-acomponents > ul > li > form .form-value input {
           width: 100%;
           box-sizing: border-box; }

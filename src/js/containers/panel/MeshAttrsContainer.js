@@ -1,12 +1,8 @@
 import React from "react";
 
-import MeshAttrsContainer from '../../containers/panel/MeshAttrsContainer';
+import MeshAttrs from "../../components/panel/MeshAttrs";
 
-export default class AddBox extends React.Component {
-  static defaults = {
-
-  }
-
+export default class MeshAttrsContainer extends React.Component {
   render() {
     const actions = {
       onChangeColor: this.props.onChangeColor,
@@ -20,12 +16,7 @@ export default class AddBox extends React.Component {
     };
 
     return (
-      <div>
-        <MeshAttrsContainer {...actions}></MeshAttrsContainer>
-        <div class="row">
-          <button class="submit" onClick={this.props.onSubmit}>Add Box</button>
-        </div>
-      </div>
+      <MeshAttrs {...actions}></MeshAttrs>
     )
   }
 }
